@@ -1,0 +1,10 @@
+body {
+    background-color: $color_white;
+}
+
+.content-zone {
+    width: $size_content;
+    margin: 0 auto;
+    padding: 0 40;
+    min-width: $size_content;
+}
