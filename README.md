@@ -1,4 +1,4 @@
-# Setup
+## Setup
 
 
 ```bash
@@ -16,16 +16,16 @@ npm run build
 
 ```
 
-# Directories
+## Directories
 
-## `/tasks`
+### `/tasks`
 
 Gulp tasks
 
-## `/config`
+### `/config`
 
 Pathes and settings for Gulp
 
-## `/data`
+### `/data`
 
 JSON data for HTML templates
