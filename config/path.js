@@ -24,17 +24,10 @@ export default {
         dest: pathDest + '/css'
     },
 
-
     img: {
         src: pathSrc + '/img/*.{jpg,png,jpeg,gif,svg}',
         watch: pathSrc + '/img/**/*.{jpg,png,jpeg,gif,svg}',
         dest: pathDest + '/img'
-    },
-
-    font: {
-        src: pathSrc + '/font/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}',
-        watch: pathSrc + '/font/**/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}',
-        dest: pathDest + '/font'
     },
 
     svg: {

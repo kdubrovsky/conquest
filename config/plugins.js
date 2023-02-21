@@ -40,16 +40,8 @@ export default {
         }
     },
 
-    webpack: {
-        mode: isProd ? "production" : "development"
-    },
-
     imagemin: {
         verbose: true
-    },
-
-    fonter: {
-        formats: ['ttf', 'woff', 'eot', 'svg']
     },
 
     svg: {
