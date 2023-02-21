@@ -56,7 +56,7 @@ export default {
         mode: {
             symbol: {
                 sprite: '../icons.svg',
-                example: true
+                example: false
             }
         },
     }
