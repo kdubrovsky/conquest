@@ -1,6 +1,10 @@
 .toolbar {
     @include setFlexWithGap(20px);
 
+    &__item {
+        position: relative;
+    }
+
     &__link {
         &:link,
         &:visited {
@@ -15,5 +19,18 @@
     &__icon {
         width: 20px;
         height: 20px;
+    }
+
+    &__counter {
+        position: absolute;
+        top: -3px;
+        right: -8px;
+        @include setFont("Roboto", 400, 8px, 11px);
+        @include setFlexCenter;
+        color: $color_main_900;
+        background-color: $color_secondary_light;
+        border-radius: 7px;
+        height: 13px;
+        width: 13px;
     }
 }

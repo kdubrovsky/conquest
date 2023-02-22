@@ -21,9 +21,9 @@
 
 @mixin setFlexWithGap($gap: initial) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     gap: $gap;
-    flex-wrap: wrap;
 }
 
 @mixin setFlexSpaceBetween {
@@ -32,5 +32,11 @@
 }
 
 @mixin setFlexCenteredRow {
+    align-items: center;
+}
+
+@mixin setFlexCenter {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
