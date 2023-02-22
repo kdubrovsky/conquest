@@ -1,0 +1,19 @@
+.toolbar {
+    @include setFlexWithGap(20px);
+
+    &__link {
+        &:link,
+        &:visited {
+            fill: $color_main_900;
+        }
+
+        &:hover {
+            fill: $color_secondary_medium;
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -13,6 +13,32 @@ html(lang="en")
         header.header 
             .content-zone 
                 .header__wrapper
+                    .header__logo
+                        a(href="#")
+                            img(src="./img/logo-header.svg", alt="Conquest logo")
+                    nav.main-menu 
+                        ul.main-menu__list 
+                            li.main-menu__item
+                                a.main-menu__link(href="#") Каталог
+                            li.main-menu__item
+                                a.main-menu__link(href="#") Акции
+                            li.main-menu__item
+                                a.main-menu__link(href="#") Доставка
+                            li.main-menu__item
+                                a.main-menu__link(href="#") Контакты
+                    ul.toolbar 
+                        li.toolbar__item 
+                            a.toolbar__link(href="#")
+                                svg.toolbar__icon
+                                    use(xlink:href="./icons/icons.svg#search")
+                        li.toolbar__item 
+                            a.toolbar__link(href="#")
+                                svg.toolbar__icon
+                                    use(xlink:href="./icons/icons.svg#favorites")
+                        li.toolbar__item
+                            a.toolbar__link(href="#")
+                                svg.toolbar__icon
+                                    use(xlink:href="./icons/icons.svg#cart")
         section.hero 
             .content-zone
                 .hero__wrapper 

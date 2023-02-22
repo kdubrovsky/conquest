@@ -16,3 +16,21 @@
     line-height: $lineHeight;
     letter-spacing: $letterSpacing;
 }
+
+// Flex
+
+@mixin setFlexWithGap($gap: initial) {
+    display: flex;
+    justify-content: flex-start;
+    gap: $gap;
+    flex-wrap: wrap;
+}
+
+@mixin setFlexSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin setFlexCenteredRow {
+    align-items: center;
+}

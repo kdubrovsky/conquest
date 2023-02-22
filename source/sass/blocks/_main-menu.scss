@@ -1,0 +1,20 @@
+.main-menu {
+    &__list {
+        @include setFlexWithGap(65px);
+    }
+
+    &__item {
+        @include setFont("Roboto", 400, 14px, 20px);
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color_main_600;
+        }
+
+        &:hover {
+            color: $color_secondary_medium;
+        }
+    }
+}
