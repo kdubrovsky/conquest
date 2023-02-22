@@ -1,0 +1,8 @@
+.hero {
+    display: flow-root;
+    background-color: $color_main_100;
+
+    &__wrapper {
+        display: grid;
+    }
+}

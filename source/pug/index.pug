@@ -44,15 +44,132 @@ html(lang="en")
         section.hero 
             .content-zone
                 .hero__wrapper 
+                    .hero__content
+                        p.hero__collection-name Весна/Лето 2019
+                        p.hero__collection-caption Коллекция
+                        h1.hero__title Швейцарские часы в наличии в Москве и с доставкой по всему миру
+                        a.btn.btn-dark Смотреть каталог
+                    .hero__image
+                        img(src="./img/watch_main.png", alt="Rado Swiss Watches")
+                    .hero__image-price 22000₽
+                    .hero__image-feature 28 мм диаметр
         section.popular 
             .content-zone
                 .popular__wrapper 
+                    h2.section-header Популярные модели
+                    a.readmore-link Смотреть все
+                .popular__items-list 
+                    .item-card
+                        a.item-card__link
+                            .item-card__info
+                                h3.item-card__title Rado
+                                p.item-card__price 65300 ₽
+                            .item-card__image 
+                                img(src="watch_1.png", alt="Rado")
+                            p.item-card__readmore Подробнее
+                    .item-card
+                        a.item-card__link
+                            .item-card__info
+                                h3.item-card__title Bvlgari
+                                p.item-card__price 65300 ₽
+                            .item-card__image 
+                                img(src="watch_1.png", alt="Rado")
+                            p.item-card__readmore Подробнее
+                    .item-card
+                        a.item-card__link
+                            .item-card__info
+                                h3.item-card__title Bvlgari 
+                                p.item-card__price 65300 ₽
+                            .item-card__image 
+                                img(src="watch_1.png", alt="Rado")
+                            p.item-card__readmore Подробнее
         section.quality 
             .content-zone
                 .quality__wrapper 
+                    .gallery
+                        .gallery__slides 
+                            .gallery__slide.gallery__slide--active 
+                                img(src="./img/photo_banner.jpg", alt="Первый баннер")
+                            .gallery__slide.gallery__slide--hidden 
+                                img(src="./img/photo_banner.jpg", alt="Первый баннер")
+                            .gallery__slide.gallery__slide--hidden 
+                                img(src="./img/photo_banner.jpg", alt="Первый баннер")
+                            .gallery__slide.gallery__slide--hidden 
+                                img(src="./img/photo_banner.jpg", alt="Первый баннер")
+                        .gallery__controls 
+                            button.gallery__button--back
+                            p.gallery__slide-number 01
+                            button.gallery__button--forward
+                    .quality__content 
+                        h2.section-header Подлинное качество
+                        p.section-description Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.
+                        a.btn.btn-light Смотреть каталог
         section.subscribe 
             .content-zone
                 .subscribe__wrapper 
+                    .subscribe__content
+                        h2.section-header Следите за нашими новостями
+                        p.section-description Подписывайтесь на <a href="#">@conquest_watch</a> в соцсетях и узнавайте о новинках и акциях первыми.
+                        .social-links
+                            a.social-links__link(href="#")
+                                svg.social-links__icon
+                                    use(xlink:href="./icons/icons.svg#instagram")
+                            a.social-links__link(href="#")
+                                svg.social-links__icon
+                                    use(xlink:href="./icons/icons.svg#facebook")
+                            a.social-links__link(href="#")
+                                svg.social-links__icon
+                                    use(xlink:href="./icons/icons.svg#twitter")
+                    .subscribe__photos
+                        .subscribe__photo
+                            img(src="./img/photo_1.jpg", alt="Часы в воде")
+                        .subscribe__photo
+                            img(src="./img/photo_2.jpg", alt="Часы на суше")
+                        .subscribe__photo
+                            img(src="./img/photo_3.jpg", alt="Часы на руке")
         footer.footer 
             .content-zone
-                .footer__wrapper 
+                .footer__wrapper
+                    .footer__contacts 
+                        .footer__logo
+                            a(href="#")
+                                img(src="./img/logo-footer.svg", alt="Conquest logo")
+                        ul.footer__links-group
+                            li.footer__link-item
+                                a.footer-link(href="tel:+74994504797") 8 (499) 450-47-97
+                            li.footer__link-item 
+                                a.footer-link(href="mailto:info@conquest.watch.ru") info@conquest.watch.ru
+                    nav.footer__menu
+                        ul.footer__links-group 
+                            li.footer__link-caption
+                                a.footer__link(href="#") О компании
+                            li.footer__link-item
+                                a.footer__link(href="#") Наши магазины
+                            li.footer__link-item
+                                a.footer__link(href="#") Вакансии                            
+                            li.footer__link-item
+                                a.footer__link(href="#") Сертификаты
+                            li.footer__link-item
+                                a.footer__link(href="#") Отзывы
+                        ul.footer__links-group 
+                            li.footer__link-caption
+                                a.footer__link(href="#") Покупателям
+                            li.footer__link-item
+                                a.footer__link(href="#") Каталог товаров
+                            li.footer__link-item
+                                a.footer__link(href="#") Как заказать?                           
+                            li.footer__link-item
+                                a.footer__link(href="#") FAQ
+                            li.footer__link-item
+                                a.footer__link(href="#") Корпоративным клиентам
+                        ul.footer__links-group 
+                            li.footer__link-caption
+                                a.footer__link(href="#") Оплата и доставка
+                            li.footer__link-item
+                                a.footer__link(href="#") Способы оплаты
+                            li.footer__link-item
+                                a.footer__link(href="#") Время доставки                           
+                            li.footer__link-item
+                                a.footer__link(href="#") Гарантии и ремонт
+                            li.footer__link-item
+                                a.footer__link(href="#") Возврат и компенсация
