@@ -1,0 +1,5 @@
+.popular {
+    &__items-list {
+        @include setFlexSpaceBetween;
+    }
+}
