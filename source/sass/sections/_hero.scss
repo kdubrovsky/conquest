@@ -49,7 +49,7 @@
         margin-left: -65px;
 
         &::before {
-            @include pseudoLine;
+            @include pseudoLine(50px);
             margin-right: 15px;
         }
     }
@@ -72,7 +72,7 @@
         color: $color_main_900;
 
         &::after {
-            @include pseudoLine;
+            @include pseudoLine(50px);
             margin-left: 15px;
         }
     }
@@ -82,7 +82,7 @@
         color: $color_main_900;
 
         &::before {
-            @include pseudoLine;
+            @include pseudoLine(50px);
             margin-right: 15px;
         }
     }

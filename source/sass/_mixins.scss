@@ -46,10 +46,10 @@
     padding: $padV $padH;
 }
 
-@mixin pseudoLine {
+@mixin pseudoLine($length) {
     content: "";
     display: inline-block;
-    width: 50px;
+    width: $length;
     height: 1px;
     background-color: $color_main_400;
     vertical-align: middle;
