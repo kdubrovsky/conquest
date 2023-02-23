@@ -1,0 +1,47 @@
+.item-card {
+    background-color: $color_main_100;
+    padding: 40px 30px 35px 30px;
+
+    &__info {
+        padding-left: 12px;
+    }
+
+    &__link {
+        display: block;
+    }
+
+    &__title {
+        @include setFont("Playfair Display", 600, 14px, 24px, 0.03em);
+        color: $color_main_900-082;
+        text-transform: uppercase;
+        padding-bottom: 1px;
+    }
+
+    &__price {
+        @include setFont("Prata", 400, 12px, 16px);
+        color: $color_main_900-082;
+    }
+
+    &__readmore {
+        @include setFont("Playfair Display", 400, 16px, 22px);
+        padding-left: 12px;
+        color: $color_main_900;
+        &::before {
+            @include pseudoLine(30px);
+            margin-right: 18px;
+        }
+    }
+
+    &__image {
+        background-image: url(../img/item-background.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        margin-bottom: 20px;
+
+        img {
+            display: block;
+            width: 310px;
+        }
+    }
+}
