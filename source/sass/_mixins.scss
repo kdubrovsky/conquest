@@ -40,3 +40,17 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin setFlexButton($padV, $padH) {
+    display: inline-flex;
+    padding: $padV $padH;
+}
+
+@mixin pseudoLine {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background-color: $color_main_400;
+    vertical-align: middle;
+}

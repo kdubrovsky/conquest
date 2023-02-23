@@ -7,19 +7,24 @@ body {
     margin: 0 auto;
     padding: 0 40px;
     min-width: $size_content;
-    outline: 1px solid blue;
+    // outline: 1px solid blue;
 }
 
 // dev only
 
-section {
-    outline: 1px solid red;
-}
+// section {
+//     outline: 1px solid red;
+// }
 
-header {
-    outline: 1px solid green;
-}
+// header {
+//     outline: 1px solid green;
+// }
 
-footer {
-    outline: 1px solid orange;
+// footer {
+//     outline: 1px solid orange;
+// }
+
+.rouble {
+    @include setFont("Roboto", 300, 1.125em, 1em);
+    padding-left: 0.35em;
 }

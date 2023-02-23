@@ -4,5 +4,86 @@
 
     &__wrapper {
         display: grid;
+        grid-template-columns: 37% 5% 12% 34% 12%;
+        grid-template-rows: 135px 260px 260px 115px;
+
+        background-image: url(../img/hero-background.svg);
+        background-repeat: no-repeat;
+        background-position: right 42% top -95px;
+    }
+
+    &__content {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 4;
+        align-self: center;
+        margin-left: 85px;
+    }
+
+    &__image {
+        grid-column: 4 / span 1;
+        grid-row: 1 / span 4;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__price {
+        grid-column: 3 / span 2;
+        grid-row: 2 / span 1;
+        align-self: start;
+        justify-self: start;
+    }
+
+    &__feature {
+        grid-column: 4 / span 2;
+        grid-row: 3 / span 1;
+        align-self: end;
+        justify-self: end;
+    }
+
+    &__collection-name {
+        @include setFont("Playfair Display", 400, 45px, 45px);
+        color: $color_main_900;
+        margin-bottom: 15px;
+        margin-left: -65px;
+
+        &::before {
+            @include pseudoLine;
+            margin-right: 15px;
+        }
+    }
+
+    &__collection-caption {
+        @include setFont("Playfair Display", 400, 30px, 32px);
+        color: $color_main_900;
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        @include setFont("Roboto", 300, 14px, 1.5);
+        color: $color_main_900;
+        margin-bottom: 35px;
+        width: 200px;
+    }
+
+    &__price {
+        @include setFont("Prata", 400, 16px, 18px);
+        color: $color_main_900;
+
+        &::after {
+            @include pseudoLine;
+            margin-left: 15px;
+        }
+    }
+
+    &__feature {
+        @include setFont("Prata", 400, 16px, 1.5);
+        color: $color_main_900;
+
+        &::before {
+            @include pseudoLine;
+            margin-right: 15px;
+        }
     }
 }

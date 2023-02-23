@@ -1,0 +1,22 @@
+.btn {
+    @include setFlexButton(25px, 38px);
+    @include setFont("Roboto", 500, 12px, 14px, 0.05em);
+    text-transform: uppercase;
+    color: $color_white;
+}
+
+.btn-dark {
+    background-color: $color_main_700;
+
+    &:hover {
+        background-color: $color_secondary_medium;
+    }
+}
+
+.btn-light {
+    background-color: $color_secondary_medium;
+
+    &:hover {
+        background-color: $color_main_700;
+    }
+}
