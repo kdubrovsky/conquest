@@ -1,7 +1,7 @@
 // primary color shades
 
 $color_main_900: #1b1a17;
-$color_main_900-082: #1b1a17d1;  // 82% opacity main_900
+$color_main_900-082: #1b1a17d1; // 82% opacity main_900
 $color_main_800: #262421;
 $color_main_700: #444240;
 $color_main_600: #555248;
@@ -12,37 +12,12 @@ $color_main_200: #f7f5ef;
 $color_main_100: #fdfdfb;
 
 $color_white: #ffffff;
+$color_white-075: #ffffffbf; // 75% opacity white
 
 // secondary colors
 
 $color_secondary_light: #e6c8b4;
 $color_secondary_medium: #d4b098;
-
-// gradients
-
-$gradient_circles_1: linear-gradient(
-    89.63deg,
-    #d4b098 0.3%,
-    rgba(212, 176, 152, 0) 99.67%
-);
-
-$gradient_circles_2: linear-gradient(
-    89.63deg,
-    #e2d0c4 0.3%,
-    rgba(226, 208, 196, 0) 99.67%
-);
-
-$gradient_circles_3: linear-gradient(
-    89.63deg,
-    #e9e3d4 0.3%,
-    rgba(226, 208, 196, 0) 99.67%
-);
-
-$gradient_hero_background: linear-gradient(
-    180deg,
-    rgba(234, 227, 212, 0) 0%,
-    #eae3d4 100%
-);
 
 // sizes
 

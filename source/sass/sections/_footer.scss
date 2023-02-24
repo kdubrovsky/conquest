@@ -1,0 +1,49 @@
+.footer {
+    display: flow-root;
+
+    background-color: $color_main_700;
+
+    &__wrapper {
+        margin: 70px 80px;
+        @include setFlexWithGap(120px);
+    }
+
+    &__contacts {
+        width: 158px;
+    }
+
+    &__logo {
+        margin-bottom: 11px;
+    }
+
+    &__menu {
+        @include setFlexSpaceBetween;
+        width: 100%;
+    }
+
+    &__links-group {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 8px;
+    }
+
+    &__link-caption {
+        @include setFont("Roboto", 600, 14px, 20px, 0.07em);
+        text-transform: uppercase;
+        color: $color_white;
+        &:hover {
+            color: $color_secondary_light;
+        }
+        margin-bottom: 15px;
+    }
+
+    &__link-item {
+        @include setFont("Roboto", 400, 12px, 14px);
+        color: $color_white-075;
+        &:hover {
+            color: $color_white;
+        }
+    }
+}
