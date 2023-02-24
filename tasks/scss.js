@@ -14,7 +14,6 @@ import autoprefixer from 'gulp-autoprefixer'               // css autoprefixing
 import csso from 'gulp-csso';                              // css minify
 import rename from 'gulp-rename';                          // file renaming
 import size from 'gulp-size';                              // size measuring
-import shorthand from 'gulp-shorthand';                    // make shorthands for css props
 import groupqueries from 'gulp-group-css-media-queries';   // group @media
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
@@ -38,7 +37,6 @@ const scss = () => {
         .pipe(sass())
         .pipe(webpcss())
         .pipe(autoprefixer())
-        .pipe(shorthand())
         .pipe(groupqueries())
         .pipe(size(plugins.messages.sizeBefore))
         .pipe(gulp.dest(path.scss.dest, { sourcemaps: plugins.isDev }))
