@@ -1,5 +1,12 @@
 .popular {
+    display: flow-root;
+
     &__items-list {
         @include setFlexSpaceBetween;
+    }
+
+    &__wrapper {
+        margin-top: 75px;
+        margin-bottom: 85px;
     }
 }

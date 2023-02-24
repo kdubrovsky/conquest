@@ -1,6 +1,5 @@
 .item-card {
     background-color: $color_main_100;
-    padding: 40px 30px 35px 30px;
 
     &__info {
         padding-left: 12px;
@@ -8,6 +7,14 @@
 
     &__link {
         display: block;
+        padding: 40px 30px 35px 30px;
+        &:hover {
+            background-color: $color_main_200;
+
+            img {
+                transform: scale(1.03);
+            }
+        }
     }
 
     &__title {
