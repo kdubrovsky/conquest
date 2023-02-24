@@ -1,10 +1,12 @@
 .section-header {
     @include setFont("Playfair Display", 400, 32px, 40px);
     color: $color_main_900;
+    margin-bottom: 30px;
 }
 
 .section-description {
     @include setFont("Roboto", 400, 16px, 1.5);
+    margin-bottom: 36px;
     color: $color_main_700;
 
     a {
