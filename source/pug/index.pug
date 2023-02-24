@@ -92,15 +92,19 @@ html(lang="en")
                             .gallery__slide.gallery__slide--active 
                                 img(src="./img/photo_banner.jpg", alt="Первый баннер")
                             .gallery__slide.gallery__slide--hidden 
-                                img(src="./img/photo_banner.jpg", alt="Первый баннер")
+                                img(src="./img/photo_banner.jpg", alt="Второй баннер")
                             .gallery__slide.gallery__slide--hidden 
-                                img(src="./img/photo_banner.jpg", alt="Первый баннер")
+                                img(src="./img/photo_banner.jpg", alt="Третий баннер")
                             .gallery__slide.gallery__slide--hidden 
-                                img(src="./img/photo_banner.jpg", alt="Первый баннер")
+                                img(src="./img/photo_banner.jpg", alt="Четвертый баннер")
                         .gallery__controls 
                             button.gallery__button.gallery__button--back
+                                svg.gallery__button-icon
+                                    use(xlink:href="./icons/icons.svg#arrow_left")
                             p.gallery__slide-number 01
                             button.gallery__button.gallery__button--forward
+                                svg.gallery__button-icon
+                                    use(xlink:href="./icons/icons.svg#arrow_right")
                     .quality__content 
                         h2.section-header Подлинное качество
                         p.section-description Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.
