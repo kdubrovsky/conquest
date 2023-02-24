@@ -7,7 +7,7 @@
 
     &__link {
         display: block;
-        padding: 40px 30px 35px 30px;
+        padding: 38px 28px 35px 28px;
         &:hover {
             background-color: $color_main_200;
 
@@ -21,7 +21,7 @@
         @include setFont("Playfair Display", 600, 14px, 24px, 0.03em);
         color: $color_main_900-082;
         text-transform: uppercase;
-        padding-bottom: 1px;
+        padding-bottom: 4px;
     }
 
     &__price {
@@ -48,7 +48,7 @@
 
         img {
             display: block;
-            width: 310px;
+            width: 313px;
         }
     }
 }

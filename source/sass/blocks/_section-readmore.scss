@@ -1,0 +1,16 @@
+.section-readmore {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -6px;
+
+    &__link {
+        @include setFont("Roboto", 500, 16px, 20px);
+        color: $color_main_700;
+        border-bottom: 1px solid $color_main_300;
+        padding-bottom: 6px;
+        &:hover {
+            color: $color_secondary_medium;
+            border-bottom: 1px solid $color_secondary_medium;
+        }
+    }
+}

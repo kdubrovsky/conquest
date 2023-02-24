@@ -3,10 +3,15 @@
 
     &__items-list {
         @include setFlexSpaceBetween;
+        margin-top: 24px;
     }
 
     &__wrapper {
-        margin-top: 75px;
+        margin-top: 82px;
         margin-bottom: 85px;
+    }
+
+    .section-header {
+        text-align: center; // specific style for .popular section
     }
 }
