@@ -1,14 +1,16 @@
-// font-family: 'Playfair Display', serif;
-// Regular - 400
-// Bold - 700
+.section-header {
+    @include setFont("Playfair Display", 400, 32px, 40px);
+    color: $color_main_900;
+}
 
+.section-description {
+    @include setFont("Roboto", 400, 16px, 1.5);
+    color: $color_main_700;
 
-// font-family: 'Prata', serif;
-// Regular - 400
-
-
-// font-family: 'Roboto', sans-serif;
-// Light - 300
-// Regular - 400
-// Medium - 500
-// Bold - 700
+    a {
+        font-weight: 600;
+        &:hover {
+            color: $color_secondary_medium;
+        }
+    }
+}

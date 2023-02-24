@@ -1,0 +1,27 @@
+.quality {
+    display: flow-root;
+
+    background-image: url(../img/quality-background.svg),
+        linear-gradient(to right, $color_main_200 34.3%, $color_main_100 34.3%);
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: right center;
+
+    &__wrapper {
+        @include setFlexWithGap(70px);
+        @include setFlexCenteredRow;
+        margin: 52px 124px 21px 80px;
+    }
+
+    &__content {
+        padding-bottom: 32px;
+    }
+
+    .section-header {
+        margin-bottom: 28px; // specific style for .quality section
+    }
+
+    .section-description {
+        margin-bottom: 36px; // specific style for .quality section
+    }
+}

@@ -21,7 +21,6 @@
 
 @mixin setFlexWithGap($gap: initial) {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     gap: $gap;
 }
