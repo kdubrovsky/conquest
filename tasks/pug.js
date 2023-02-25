@@ -12,7 +12,7 @@ import plumber from 'gulp-plumber';                    // errors catcher
 import pugs from 'gulp-pug';                           // pug processing
 import notify from 'gulp-notify';                      // notifications
 import typo from 'gulp-typograf'
-// import webphtml from 'gulp-webp-html';                 // webp html support
+import webphtml from 'gulp-webp-html';                 // webp html support
 
 
 // ------------ params
@@ -29,7 +29,7 @@ const pug = () => {
         .pipe(plumber(plumberPUGSettings))
         .pipe(pugs(plugins.pug))
         .pipe(typo({ locale: ['en-US'] }))
-        // .pipe(webphtml())
+        .pipe(webphtml())
         .pipe(gulp.dest(path.pug.dest))
 };
 
