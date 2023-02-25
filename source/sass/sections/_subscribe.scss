@@ -1,4 +1,6 @@
 .subscribe {
+    display: flow-root;
+
     &__wrapper {
         @include setFlexWithGap(70px);
         margin: 80px 0 90px;
