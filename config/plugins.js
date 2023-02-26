@@ -51,5 +51,9 @@ export default {
                 example: false
             }
         },
+    },
+
+    typo: {
+        locale: ['ru', 'en-US']
     }
 }

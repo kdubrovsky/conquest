@@ -10,7 +10,7 @@ import plugins from '../config/plugins.js';
 // ------------ connecting plugins
 import plumber from 'gulp-plumber';                        // errors catcher                       
 import notify from 'gulp-notify';                          // notifications
-import svgSprite from 'gulp-svg-sprite';
+import svgSprite from 'gulp-svg-sprite';                   // sprite builder
 
 
 // ------------ params
@@ -21,7 +21,7 @@ let plumberSvgSettings = {
     }))
 };
 
-// ------------ Images processing pipe
+// ------------ SVG processing pipe
 const svg = () => {
     return gulp.src(path.svg.src)
         .pipe(plumber(plumberSvgSettings))
@@ -29,4 +29,4 @@ const svg = () => {
         .pipe(gulp.dest(path.svg.dest))
 };
 
-export default svg; 
+export default svg;

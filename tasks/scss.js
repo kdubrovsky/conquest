@@ -21,6 +21,7 @@ import webpcss from 'gulp-webp-css';                       // webp for css
 
 const sass = gulpSass(dartSass);
 
+
 // ------------ params
 let plumberSCSSSettings = {
     errorHandler: notify.onError(err => ({
@@ -30,7 +31,7 @@ let plumberSCSSSettings = {
 };
 
 
-// ------------ CSS processing pipe
+// ------------ SCSS processing pipe
 const scss = () => {
     return gulp.src(path.scss.src, { sourcemaps: plugins.isDev })
         .pipe(plumber(plumberSCSSSettings))
