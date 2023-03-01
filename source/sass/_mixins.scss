@@ -42,6 +42,7 @@
 
 @mixin setFlexButton($padV, $padH) {
     display: inline-flex;
+    justify-content: center;
     padding: $padV $padH;
 }
 

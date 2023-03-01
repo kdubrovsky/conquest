@@ -19,9 +19,10 @@
     margin-bottom: 36px;
     color: $color_main_700;
 
-    @media (max-width: $screen_M) {
+    @media (max-width: $screen_S) {
         @include setFont("Roboto", 400, 14px, 1.5);
-        margin-bottom: 10px;
+        margin-bottom: 24px;
+        text-align: center;
     }
 
     a {

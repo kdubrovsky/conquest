@@ -1,19 +1,44 @@
 .quality {
+    @media (max-width: $screen_S) {
+        .section-header {
+            text-align: center; // specific style
+            margin-top: 20px;
+        }
+    }
+
     display: flow-root;
 
     background-image: url(../img/background_quality.svg),
         linear-gradient(to right, $color_main_200 34%, $color_main_100 34%);
 
     background-repeat: no-repeat, no-repeat;
-    background-position: right center;
+    background-position: right -550px center, center;
+    background-size: auto;
+
+    @media (max-width: $screen_S) {
+        background-image: url(../img/background_quality.svg),
+            linear-gradient(to bottom, $color_main_200 34%, $color_main_100 34%);
+        background-position: right -650px center, center;
+    }
 
     &__wrapper {
-        @include setFlexWithGap(70px);
+        @include setFlexWithGap(7%);
         @include setFlexCenteredRow;
-        margin: 52px 124px 21px 80px;
+        margin: 4% 12% 4% 8%;
+
+        @media (max-width: $screen_S) {
+            flex-direction: column;
+            margin: 10% 5%;
+        }
     }
 
     &__content {
         padding-bottom: 32px; // adjust vertical alignment
+        @media (max-width: $screen_S) {
+            padding-bottom: 10px;
+            .btn {
+                width: 100%;
+            }
+        }
     }
 }

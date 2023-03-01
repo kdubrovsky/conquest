@@ -3,9 +3,13 @@
     flex-direction: column;
     align-items: flex-end;
 
+    @media (max-width: $screen_S) {
+        align-items: center;
+    }
+
     &__slides {
-        width: 521px;
-        height: 414px;
+        width: 100%;
+        height: auto;
     }
 
     &__slide {
@@ -23,6 +27,11 @@
         @include setFlexCenteredRow;
         padding-top: 18px;
         padding-right: 80px;
+
+        @media (max-width: $screen_S) {
+            padding-right: 0;
+            margin-bottom: 10px;
+        }
     }
 
     &__slide-number {
