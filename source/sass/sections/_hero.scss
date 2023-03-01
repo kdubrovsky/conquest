@@ -10,6 +10,25 @@
         background-image: url(../img/background_hero.svg);
         background-repeat: no-repeat;
         background-position: right 42% top -95px;
+
+        @media (max-width: $screen_L) {
+            grid-template-rows: 80px 200px 200px 80px;
+            background-position: right 52% top -165px;
+        }
+
+        @media (max-width: $screen_M) {
+            grid-template-columns: 30% 5% 12% 34% 12%;
+            grid-template-rows: 40px 150px 150px 40px;
+            background-position: right 62% top -100px;
+            background-size: 300px;
+        }
+
+        @media (max-width: $screen_S) {
+            grid-template-columns: 30% 5% 12% 23% 30%;
+            grid-template-rows: 15px 150px 150px 15px;
+            background-position: right 20% top -100px;
+            background-size: 250px;
+        }
     }
 
     &__content {
@@ -17,14 +36,31 @@
         grid-row: 1 / span 4;
         align-self: center;
         margin-left: 85px;
+
+        @media (max-width: $screen_L) {
+            grid-column: 1 / span 3;
+        }
+
+        @media (max-width: $screen_M) {
+            margin-left: 0;
+        }
+
+        @media (max-width: $screen_S) {
+            grid-column: 1 / span 4;
+        }
     }
 
     &__image {
         grid-column: 4 / span 1;
         grid-row: 1 / span 4;
+        overflow: hidden;
 
         img {
             height: 100%;
+        }
+
+        @media (max-width: $screen_S) {
+            grid-column: 5 / span 1;
         }
     }
 
@@ -33,6 +69,14 @@
         grid-row: 2 / span 1;
         align-self: start;
         justify-self: start;
+        @media (max-width: $screen_S) {
+            margin-right: 40%;
+        }
+        @media (max-width: $screen_XS) {
+            grid-column: 4 / span 2;
+            justify-self: end;
+            margin-right: 12%;
+        }
     }
 
     &__feature {
@@ -40,6 +84,12 @@
         grid-row: 3 / span 1;
         align-self: end;
         justify-self: end;
+        @media (max-width: $screen_S) {
+            margin-right: 40%;
+        }
+        @media (max-width: $screen_XS) {
+            margin-right: 23%;
+        }
     }
 
     &__collection-name {
@@ -47,6 +97,20 @@
         color: $color_main_900;
         margin-bottom: 15px;
         margin-left: -65px;
+
+        @media (max-width: $screen_L) {
+            @include setFont("Playfair Display", 400, 30px, 30px);
+        }
+
+        @media (max-width: $screen_M) {
+            @include setFont("Playfair Display", 400, 24px, 24px);
+            margin-left: 0;
+        }
+
+        @media (max-width: $screen_S) {
+            @include setFont("Playfair Display", 400, 20px, 20px);
+            margin-bottom: 10px;
+        }
 
         &::before {
             @include pseudoLine(50px);
@@ -58,13 +122,37 @@
         @include setFont("Playfair Display", 400, 30px, 32px);
         color: $color_main_900;
         margin-bottom: 35px;
+
+        @media (max-width: $screen_L) {
+            @include setFont("Playfair Display", 400, 20px, 20px);
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: $screen_M) {
+            @include setFont("Playfair Display", 400, 16px, 16px);
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: $screen_S) {
+            @include setFont("Playfair Display", 400, 14px, 14px);
+            margin-bottom: 15px;
+        }
     }
 
     &__title {
-        @include setFont("Roboto", 300, 14px, 1.5);
+        @include setFont("Roboto", 300, 12px, 1.5);
         color: $color_main_900;
         margin-bottom: 35px;
-        width: 200px;
+        width: 250px;
+
+        @media (max-width: $screen_L) {
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: $screen_XS) {
+            width: 200px;
+            margin-bottom: 20px;
+        }
     }
 
     &__price {
@@ -73,7 +161,21 @@
 
         &::after {
             @include pseudoLine(50px);
+            @media (max-width: $screen_M) {
+                @include pseudoLine(100px);
+            }
+            @media (max-width: $screen_S) {
+                @include pseudoLine(100px);
+            }
             margin-left: 15px;
+        }
+
+        @media (max-width: $screen_L) {
+            @include setFont("Prata", 400, 12px, 16px);
+        }
+
+        @media (max-width: $screen_S) {
+            @include setFont("Prata", 400, 10px, 12px);
         }
     }
 
@@ -84,6 +186,18 @@
         &::before {
             @include pseudoLine(50px);
             margin-right: 15px;
+
+            @media (max-width: $screen_M) {
+                @include pseudoLine(100px);
+            }
+        }
+
+        @media (max-width: $screen_L) {
+            @include setFont("Prata", 400, 12px, 16px);
+        }
+
+        @media (max-width: $screen_S) {
+            @include setFont("Prata", 400, 10px, 12px);
         }
     }
 }

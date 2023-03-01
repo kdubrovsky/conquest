@@ -48,6 +48,13 @@
 @mixin pseudoLine($length) {
     content: "";
     display: inline-block;
+
+    @media (max-width: $screen_M) {
+        display: block;
+        vertical-align: initial;
+        margin: 1em 0;
+    }
+
     width: $length;
     height: 1px;
     background-color: $color_main_400;

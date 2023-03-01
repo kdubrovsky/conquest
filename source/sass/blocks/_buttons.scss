@@ -3,6 +3,12 @@
     @include setFont("Roboto", 500, 12px, 14px, 0.05em);
     text-transform: uppercase;
     color: $color_white;
+
+    @media (max-width: $screen_L) {
+        @include setFlexButton(15px, 20px);
+        @include setFont("Roboto", 500, 10px, 12px, 0.05em);
+    }
+    
 }
 
 .btn-dark {
