@@ -3,26 +3,36 @@ body {
 }
 
 .content-zone {
-    width: $size_content;
     margin: 0 auto;
     padding: 0 40px;
-    min-width: $size_content;
-    // outline: 1px solid blue;
+
+    max-width: ($max_screen - 80px); // global width limits
+    min-width: ($min_screen - 32px);
+
+    @media (max-width: $max_screen) {
+        outline: 1px solid #f155bd;
+    }
+
+    @media (max-width: $screen_XL) {
+        outline: 1px solid #4400ff;
+    }
+
+    @media (max-width: $screen_L) {
+        outline: 1px solid #00ff4c;
+    }
+
+    @media (max-width: $screen_M) {
+        outline: 1px solid #ff9100;
+    }
+
+    @media (max-width: $screen_S) {
+        outline: 1px solid #33fae6;
+    }
+
+    @media (max-width: $screen_XS) {
+        outline: 1px solid #000000;
+    }
 }
-
-// dev only
-
-// section {
-//     outline: 1px solid red;
-// }
-
-// header {
-//     outline: 1px solid green;
-// }
-
-// footer {
-//     outline: 1px solid orange;
-// }
 
 .rouble {
     @include setFont("Roboto", 300, 1.125em, 1em);

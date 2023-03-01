@@ -19,6 +19,14 @@ $color_white-075: #ffffffbf; // 75% opacity white
 $color_secondary_light: #e6c8b4;
 $color_secondary_medium: #d4b098;
 
-// sizes
+// breakpoints
 
-$size_content: 1170px;
+$size_content: 1170px;  // remove later
+
+$max_screen: 1920px;
+$screen_XL: 1440px;
+$screen_L: 1280px;
+$screen_M: 968px;
+$screen_S: 680px;
+$screen_XS: 420px;
+$min_screen: 320px;
