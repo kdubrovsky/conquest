@@ -16,7 +16,10 @@ html(lang="en")
                     .header__logo
                         a(href="#")
                             img(src="./img/logo_header.svg", alt="Conquest logo")
-                    nav.main-menu 
+                    nav.main-menu
+                        button.main-menu__burger
+                            svg.main-menu__burger-icon
+                                    use(xlink:href="./icons/icons.svg#burger")
                         ul.main-menu__list 
                             li.main-menu__item
                                 a.main-menu__link(href="#") Каталог

@@ -1,6 +1,33 @@
 .main-menu {
+    @media (max-width: $screen_M) {
+        order: -1;
+    }
+
     &__list {
         @include setFlexWithGap(65px);
+        @media (max-width: $screen_M) {
+            display: none;
+        }
+    }
+
+    &__burger {
+        @media (max-width: $screen_M) {
+            display: block;
+        }
+        @media (min-width: ($screen_M + 1)) {
+            display: none;
+        }
+        background-color: transparent;
+        fill: $color_main_900;
+
+        &:hover {
+            fill: $color_secondary_medium;
+        }
+    }
+
+    &__burger-icon {
+        width: 20px;
+        height: 20px;
     }
 
     &__item {
