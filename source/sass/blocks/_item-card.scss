@@ -31,6 +31,11 @@
 
     &__readmore {
         @include setFont("Playfair Display", 400, 16px, 22px);
+
+        @media (max-width: $screen_M) {
+            @include setFont("Playfair Display", 400, 12px, 22px);
+        }
+
         padding-left: 12px;
         color: $color_main_900;
         &::before {
@@ -48,7 +53,11 @@
 
         img {
             display: block;
-            width: 313px;
+            width: 100%;
+        }
+
+        @media (max-width: $screen_M) {
+            margin-bottom: 5px;
         }
     }
 }

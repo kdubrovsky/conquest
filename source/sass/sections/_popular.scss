@@ -3,11 +3,36 @@
 
     &__items-list {
         @include setFlexSpaceBetween;
+        gap: 3%;
         margin-top: 24px;
+
+        @media (max-width: $screen_S) {
+            margin-top: 10px;
+            gap: 15px;
+        }
+
+        @media (max-width: $screen_XS) {
+            margin-top: 10px;
+            gap: 15px;
+            flex-direction: column;
+        }
+        
     }
 
     &__wrapper {
         margin: 82px 0 85px;
+
+        @media (max-width: $screen_L) {
+            margin: 60px 0 60px;
+        }
+
+        @media (max-width: $screen_M) {
+            margin: 60px 0 40px;
+        }
+
+        @media (max-width: $screen_M) {
+            margin: 40px 0 30px;
+        }
     }
 
     .section-header {

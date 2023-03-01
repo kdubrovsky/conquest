@@ -3,11 +3,23 @@
     flex-direction: row-reverse;
     margin-top: -6px;
 
+    @media (max-width: $screen_S) {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0;
+    }
+
     &__link {
         @include setFont("Roboto", 500, 16px, 20px);
         color: $color_main_700;
         border-bottom: 1px solid $color_main_300;
         padding-bottom: 6px;
+
+        @media (max-width: $screen_M) {
+            @include setFont("Roboto", 500, 12px, 18px);
+            margin-bottom: 10px;
+        }
+
         &:hover {
             color: $color_secondary_medium;
             border-bottom: 1px solid $color_secondary_medium;

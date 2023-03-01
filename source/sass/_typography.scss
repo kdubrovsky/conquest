@@ -2,12 +2,27 @@
     @include setFont("Playfair Display", 400, 32px, 40px);
     color: $color_main_900;
     margin-bottom: 30px;
+
+    @media (max-width: $screen_L) {
+        @include setFont("Playfair Display", 400, 24px, 28px);
+        margin-bottom: 25px;
+    }
+
+    @media (max-width: $screen_M) {
+        @include setFont("Playfair Display", 400, 18px, 22px);
+        margin-bottom: 15px;
+    }
 }
 
 .section-description {
     @include setFont("Roboto", 400, 16px, 1.5);
     margin-bottom: 36px;
     color: $color_main_700;
+
+    @media (max-width: $screen_M) {
+        @include setFont("Roboto", 400, 14px, 1.5);
+        margin-bottom: 10px;
+    }
 
     a {
         font-weight: 600;
