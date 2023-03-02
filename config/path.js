@@ -8,13 +8,7 @@ export default {
 
     html: {
         src: pathSrc + '/*.html',
-        watch: pathSrc + '/html/**/*.html',
-        dest: pathDest
-    },
-
-    pug: {
-        src: pathSrc + '/pug/*.pug',
-        watch: pathSrc + '/pug/**/*.pug',
+        watch: pathSrc + '/*.html',
         dest: pathDest
     },
 

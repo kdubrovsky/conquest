@@ -20,6 +20,7 @@
         "gulp-autoprefixer": "^8.0.0",
         "gulp-csso": "^4.0.1",
         "gulp-group-css-media-queries": "^1.2.2",
+        "gulp-html-img-wrapper": "^4.0.1",
         "gulp-htmlmin": "^5.0.1",
         "gulp-imagemin": "^8.0.0",
         "gulp-newer": "^1.4.0",
@@ -34,7 +35,6 @@
         "gulp-typograf": "^4.0.3",
         "gulp-webp": "^4.0.1",
         "gulp-webp-css": "^1.1.0",
-        "gulp-webp-html": "^1.0.2",
         "node-notifier": "^10.0.1",
         "sass": "^1.57.1"
     }

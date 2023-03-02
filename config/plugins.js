@@ -12,10 +12,6 @@ export default {
         collapseWhitespace: isProd
     },
 
-    pug: {
-        pretty: true
-    },
-
     messages: {
 
         sizeAfter: {
@@ -55,5 +51,10 @@ export default {
 
     typo: {
         locale: ['ru', 'en-US']
+    },
+
+    webpwrapper: {
+        logger: true, // false for not showing message with amount of wrapped img tags for each file
+        extensions: ['.jpg', '.png', '.jpeg'],
     }
 }

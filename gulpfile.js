@@ -12,7 +12,7 @@ import browserSync from 'browser-sync'       // browser live reload
 
 // ------------ importing tasks
 import clear from './tasks/clear.js'
-import pug from './tasks/pug.js'
+import html from './tasks/html.js'
 import scss from './tasks/scss.js'
 import img from './tasks/img.js'
 import svg from './tasks/svg.js'
@@ -28,7 +28,7 @@ const server = () => {
 
 // ------------ watching tasks
 const watcher = () => {
-    gulp.watch(path.pug.watch, pug).on('all', browserSync.reload);  // watching Pug
+    gulp.watch(path.html.watch, html).on('all', browserSync.reload);
     gulp.watch(path.scss.watch, scss).on('all', browserSync.reload);  // watching CSS
     gulp.watch(path.img.watch, img).on('all', browserSync.reload);  // watching images
     gulp.watch(path.svg.watch, svg).on('all', browserSync.reload);  // watching svg
@@ -37,7 +37,7 @@ const watcher = () => {
 
 // ------------ granular tasks
 export { clear };
-export { pug };
+export { html };
 export { scss };
 export { img };
 export { svg };
@@ -47,7 +47,7 @@ export { watcher };
 // ------------ builds
 const build = gulp.series(
     clear,
-    gulp.parallel(pug, scss, img, svg)
+    gulp.parallel(html, scss, img, svg)
 );
 
 const dev = gulp.series(
