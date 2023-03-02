@@ -12,7 +12,12 @@
         @include setFont("Playfair Display", 400, 18px, 22px);
         margin-bottom: 15px;
     }
+
+    @media (max-width: $screen_S) {
+            text-align: center;
+    }
 }
+
 
 .section-description {
     @include setFont("Roboto", 400, 16px, 1.5);
